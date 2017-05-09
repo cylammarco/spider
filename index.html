@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Marco Lam's Homepage</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47487104-1', 'roe.ac.uk');
+  ga('send', 'pageview');
+
+</script>
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1>Marco Lam</h1>
+          <h2>Share My World With The World.</h2>
+        </div>
+      </div>
+      <nav>
+        <div id="menu_container">
+          <ul class="sf-menu" id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="outreach.html">Outreach</a></li>
+            <!-- make drop down menu 
+            <li><a href="#">Links</a>
+              <ul>
+                <li><a href="#">Drop Down One</a></li>
+                <li><a href="#">Drop Down Two</a></li>
+                <li><a href="#">Drop Down Three</a></li>
+                <li><a href="#">Drop Down Four</a></li>
+                <li><a href="#">Drop Down Five</a></li>
+              </ul>
+            </li> -->
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar">
+          <h3>Latest News</h3>
+          <h4>Graduated!</h4>
+          <h5>29th November 2016</h5>
+          <!-- <p>Check it out <a href="http://www.roe.ac.uk/~mlam/publications.html">here.</p> -->
+        </div>
+        <div class="sidebar">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="http://www.roe.ac.uk/" target="_blank">Royal Observatory</a></li>
+            <li><a href="http://www.ed.ac.uk/home" target="_blank">University of Edinburgh</a></li>
+            <li><a href="http://surveys.roe.ac.uk/wsa/" target="_blank">WFCAM Science Archive</a></li>
+            <li><a href="http://pan-starrs.ifa.hawaii.edu/public/" target="_blank">PanSTARRS</a></li>
+            <li><a href="http://www.skyscanner.net/" target="_blank">skyscanner</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <h1>About me</h1>
+        <p>I am PhD graduate working with <a href="http://www.roe.ac.uk/~nch/">Dr. Nigel Hambly</a> and <a href="http://www.roe.ac.uk/~nr/" target="_blank">Dr. Nick Rowell</a> at the <a href="http://www.roe.ac.uk/ifa/" target="_blank">Institute for Astronomy</a> of the <a href="http://www.ed.ac.uk/home" target="_blank">University of Edinburgh</a>. A fast learner, self-taught programmer with experience in parallel computing with MPI in Python, and excellent design skills for poster and PowerPoint presentation. Experienced tutor in Maths and Physical Science subjects at University level.</p>
+        <!-- studying the solar neighbourhood with <a href="http://pan-starrs.ifa.hawaii.edu/public/">PanSTARRS</a> -->
+        <ul id="images">
+          <li><img src="images/mypic0.jpg" height="300" alt="seascape_one" /></li>
+          <li><img src="images/mypic1.jpg" height="300" alt="seascape_two" /></li>
+          <li><img src="images/mypic2.jpg" height="300" alt="seascape_three" /></li>
+        </ul>
+        <p>Left: The half-meter telescope at the Royal Observatory of Edinburgh.<br>
+        Centre: Sino-Russian border, Manzhouli.<br>
+        Right: Photo on the graduation day with our Director of Study.</p>
+      </div>
+    </div>
+    <footer>
+      <p>Last updated on: 7th February 2017 | Copyright &copy; scenic_photo_two | <a href="http://www.css3templates.co.uk" target="_blank">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <p>&nbsp;</p>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+    $('#images').kwicks({
+      max : 400,
+      spacing : 2
+    });
+    $('ul.sf-menu').sooperfish();
+  });
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Marco Lam's Homepage</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47487104-1', 'roe.ac.uk');
+  ga('send', 'pageview');
+
+</script>
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1>Marco Lam</h1>
+          <h2>Share My World With The World.</h2>
+        </div>
+      </div>
+      <nav>
+        <div id="menu_container">
+          <ul class="sf-menu" id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="outreach.html">Outreach</a></li>
+            <!-- make drop down menu 
+            <li><a href="#">Links</a>
+              <ul>
+                <li><a href="#">Drop Down One</a></li>
+                <li><a href="#">Drop Down Two</a></li>
+                <li><a href="#">Drop Down Three</a></li>
+                <li><a href="#">Drop Down Four</a></li>
+                <li><a href="#">Drop Down Five</a></li>
+              </ul>
+            </li> -->
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar">
+          <h3>Latest News</h3>
+          <h4>Graduated!</h4>
+          <h5>29th November 2016</h5>
+          <!-- <p>Check it out <a href="http://www.roe.ac.uk/~mlam/publications.html">here.</p> -->
+        </div>
+        <div class="sidebar">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="http://www.roe.ac.uk/" target="_blank">Royal Observatory</a></li>
+            <li><a href="http://www.ed.ac.uk/home" target="_blank">University of Edinburgh</a></li>
+            <li><a href="http://surveys.roe.ac.uk/wsa/" target="_blank">WFCAM Science Archive</a></li>
+            <li><a href="http://pan-starrs.ifa.hawaii.edu/public/" target="_blank">PanSTARRS</a></li>
+            <li><a href="http://www.skyscanner.net/" target="_blank">skyscanner</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <h1>Observational Astronomy (Lab) 2013-2016</h1>
+        <p>The following was prepared by Sandy Roger (PhD student 2010-2014):</p>
+        <p><a href="pgmtofits.zip">Here</a> is a PGM to FITS file converter, to convert Y16 PGM files into standard FITS format. It also cuts out the timestamp from the filename that the camera software adds, to try and make the filename short enough for IRAF to deal with.</p>
+        <p>You should download it on the Linux computers (or a Mac), and then from the Terminal, run</p>
+        <p><span style="font-family: Monospace;">unzip pgmtofits.zip</span><p>
+        <p><span style="font-family: Monospace;">cd pgmtofits</span><p>
+        <p><span style="font-family: Monospace;">python pgmtofits.py "/shome/yourusername/place/where/i/put/the/files/*.pgm"</span></p>
+        <p>(the quote marks are important!) or<p>
+        <p><span style="font-family: Monospace;">python pgmtofits.py</span></p>
+        <p>to get help. It'll put name-shortened .fits files in the place the .pgms came from, ready for GAIA-ing or IRAF-ing.</p>
+        <h1>Group Project(SH) 2014-2015</h1>
+        <p>Multi-epoch imaging for Cepheid Variables. Find the period by fitting sine curve over the variability in brightness and then determine the distance with the Period-Luminosity relation.</p>
+        <h1>Observational Astronomy (Telescope) 2014-2015</h1>
+        <p>Make a false-colour image of Jupiter and the 4 Galilean Moons.</p>
+        <h1>Group Project(SH)/Observational Astronomy(JH) 2013-2014</h1>
+        <p>For the course outline,  you can follow <a href="http://www.drps.ed.ac.uk/13-14/dpt/cxphys10086.htm">this link</a> and <a href="http://www.drps.ed.ac.uk/13-14/dpt/cxphys09059.htm">this link</a> to the Degree Regulations & Programmes of Study 2013/2014 pages for the Group Project and Observational Astronomy repectively. In short, the goal is to measure the distance to a star cluster by</p>
+        <h2>[1] Obtaining multi-band imaging of star clusters with the IfA student telescope.</h2>
+        <h2>[2] Imaging data reduction and accurate photometry of star cluster members.</h2>
+        <h2>[3] Distance determination for star clusters based on main sequence fitting.</h2>
+        <p>In this academic year, all groups work on the <a href="http://en.wikipedia.org/wiki/Messier_37">Messier 37</a>. There are a few FAQs:</p>
+        <ul>
+          <li><p>Wikipedia doesn't tell me what I need?!</p>
+              <p>Some good places to search for the parameters would be, for example, <a href="http://ned.ipac.caltech.edu/">NED</a> or <a href="http://simbad.u-strasbg.fr/simbad/">SIMBAD</a>.</p> </li>
+          <li><p>What is the make of the telescope?</p>
+              <p>The telescope is 24 inches in diameter. The CCD is an <a href="https://www.sbig.com/products/cameras/stf-series/stf/">SBIG STF8300</a> and the filters are <a href="http://www.sbig.com/products/filters/photometric-filters/astrodon/sloan/">Astrodon Sloan Filters</a>.</p></li>
+          <li><p>The are hundred of stars, how can I find the magnitude of each of them?!</p>
+              <p>There are many programmes allow you to do everything automatically given that you provide the magnitude or a(some) reference star(s) and/or ZP magnitude(s) depending on which programme you are using. Some example programmes would be <a href="http://star-www.dur.ac.uk/~pdraper/gaia/gaia.html">GAIA</a>, <a href="http://star-www.dur.ac.uk/~pdraper/ccdpack/ccdpack.html">CCDPACK</a>, <a href="http://aladin.u-strasbg.fr/aladin.gml">Aladin</a>, <a href="http://iraf.noao.edu/">iraf</a> etc.</p></li>
+          <li><p>What doess "main sequence fitting" mean?</p>
+              <p>Data fitting is a method that tells you which model best describes your set of data. Stars in a cluster have similar age, so the stellar locus can be assumed to follow a single isochrone on an HR-diagram. To do a "main sequence fitting", you want to fit the isochrone to your data by varying the distance and the age (with an assumed metallicity). A simple way of doing this would be by means of Chi^2 minimisation. A suggested reading would be the <a href="http://roe.lib.ed.ac.uk/vwebv/holdingsInfo?searchId=25&recCount=10&recPointer=0&bibId=16907">Data Reduction and Error Analysis</a>.</p></li>
+          <li><p>Where can I find isochrones?</p>
+              <p>There are many models that are available online, some are easier to use than the others, for example the <a href="http://stellar.dartmouth.edu/models/index.html">Dartmouth Stellar Evolution Database</a>, the <a href="http://stev.oapd.inaf.it/cgi-bin/cmd">CMD</a>, the <a href="http://albione.oa-teramo.inaf.it/">BaSTI</a> etc...</p></li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <p>Last updated on: 7th February 2017 | Copyright &copy; scenic_photo_two | <a href="http://www.css3templates.co.uk" target="_blank">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <p>&nbsp;</p>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
+</html>
